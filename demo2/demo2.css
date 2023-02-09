@@ -1,0 +1,29 @@
+
+body {
+    font-family: "Times New Roman", Georgia, Serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+a{
+  color: #000 !important;
+}
+.display{
+  position: relative;
+}
+
+.w3-display-bottomleft {
+    position: absolute;
+    left: 30px;
+    bottom:-10px;
+}
+@media (max-width: 767px) {
+  .d-none .d-sm-block{
+    display: none;
+  }
+}
+
+$(element).clone(false).appendTo(destination);

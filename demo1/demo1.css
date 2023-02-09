@@ -1,0 +1,105 @@
+@media only screen and (max-width: 767px) {
+    .navbar-toggler {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .row .col-sm-4 {
+        width: 100% !important;
+    }
+}
+
+
+
+
+
+body {
+    font-family: "Lato", sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+h2 {
+    font-size: 30px;
+}
+.navbar{
+    background-color: #000;
+}
+.navbar .bg-light {
+    background-color: #000 !important;
+    max-width: 100%;
+}
+.navbar-collapse .navbar-nav .nav-item a{
+    color: #fff !important;
+}
+.navbar-toggler {
+    display: block;
+}
+.btn-secondary{
+    color: #fff !important;
+    background-color: #000 !important;
+    border-color: #000 !important;
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+  
+.mySlides {
+    display: none 
+}
+.t-display{
+    text-align: center!important;
+    position: relative;
+}
+.t-color{
+    text-align: center !important ;
+}
+.padding-top{
+    padding-top: 64px!important;
+    padding-bottom: 64px!important;
+}
+.text{
+    text-align: justify!important;
+}
+.container{
+    display: flex;
+    padding: auto;
+    margin-right: 20px;
+}
+.bg-black{
+    color: #fff!important;
+    background-color: #000!important;
+}
+.t-border{
+    border: 1px solid #ccc!important;
+    background-color: #fff!important;
+    color: #000 !important;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.bg-black .t-border{
+    text-align: left;
+}
+.t-border>li{
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+.text-sd{
+    color: #fff!important;
+    background-color: red;
+}
+.three{
+    float: right;
+}
+.padding-row{
+    padding: 0 8px;
+}
+.col-lg-6{
+    width: 33,333333%;
+}
