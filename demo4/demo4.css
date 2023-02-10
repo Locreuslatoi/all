@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+.discount{
+    padding: 5px;
+    background: #fff;
+    margin-bottom: 0;
+    text-align: center;
+    color: #ff001f;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-1 {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+p {
+display: inline-block;
+margin: 0 10px;
+}
+.nap{
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 10px;
+    margin-left: 6px;
+    font-size: 12px;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #2183f6;
+    text-decoration: none;
+}
+.nav-wrap{
+    width: auto;
+    margin-top: auto;
+    position: relative;
+    background-color: #cd1818;
+}
+.nav-top .nav-wrap {
+    display: flex;
+}
+.img-2{
+    width: 185px;
+    height: 50px;
+}
+.menu-1{
+    display: flex;
+
+    list-style-type: none;
+}
+span{
+    text-decoration: none !important;
+}
+.menu-1 li{
+    padding-left: 20px;
+    justify-content: center;
+}
+.menu-2{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#flex li{
+    display: none;
+}
+#flex:hover li {
+    display: block;
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-1 .navbar{
+    display: flex !important;
+    margin-top: 5px;
+}
+input[type="text"] {
+    width: 450px;
+    padding: 12px 20px;
+    margin-top: 14px;
+    border: 2px ;
+    border-radius: 1px;
+}
+
+button[type="submit"] {
+    width: 10%;
+    padding: 12px 20px;
+    background-color: #000;
+    color: white;
+    margin-top: 14px;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+}
+#flexx div{
+    display: none;
+}
+#flexx:hover div {
+    display: block;
+}
+.nav .navbar{
+    height: 36px;
+    position: relative;
+    z-index: 9;
+    color: #fff !important;
+    background: #252525;
+    margin-top: 0 ;
+}
+ul, li, span, a{
+    color: #fff;
+    text-decoration: none;
+}
+.color-t{
+    color: #000 !important;
+}
+.color-t a{
+    color: #000 !important;
+}
+.color-t p{
+    color: #000 !important;
+}
+.border-1{
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    display: inline-block;
+}
+
