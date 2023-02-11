@@ -36,7 +36,7 @@ margin: 0 10px;
     margin-left: 6px;
     font-size: 12px;
     border-radius: 2px;
-    color: #fff;
+    color: #000;
     background-color: #2183f6;
     text-decoration: none;
 }
@@ -104,25 +104,32 @@ button[type="submit"] {
     cursor: pointer;
 }
 #flexx div{
-    display: none;
+    display: none;  
 }
-#flexx:hover div {
+#flexx:hover div{
     display: block;
 }
 .nav .navbar{
     height: 36px;
-    position: relative;
-    z-index: 9;
-    color: #fff !important;
+    color: #fff;
     background: #252525;
     margin-top: 0 ;
 }
-ul, li, span, a{
+ul, span, a{
     color: #fff;
     text-decoration: none;
+    list-style-type: none;
 }
 .color-t{
     color: #000 !important;
+}
+.border-fl{
+    display: flex !important;
+}
+.border-fl-1{
+    display: flex;
+    flex-wrap:wrap ;
+    margin-bottom: 20px;
 }
 .color-t a{
     color: #000 !important;
@@ -132,8 +139,46 @@ ul, li, span, a{
 }
 .border-1{
     border: 1px solid #ccc;
-    padding: 10px;
     background-color: #fff;
-    display: inline-block;
 }
+.border-2{
+    position: relative;
+    border: 1px solid #ccc;
+    background-color: #fff; 
+    box-sizing: border-box;
+    width: 600px;
+}
+.item {
+    width: 100px;
+    height: 5px;
+    margin: 10px;
+}
+.border-fl-2{
+    display: flex;
+    flex-wrap:wrap ;
+}
+.border-fl-3 .item {
+    height: 15px !important;
+}
+.border-3{
+    position: relative;
+    border: 1px solid #ccc;
+    background-color: #fff; 
+    box-sizing: border-box;
+}
+.item-1{
+    width: 150px;
+    height: 5px;
+    margin: 10px;
+}
+.border-img{
+    position: relative;
+    border: 1px solid #ccc;
+    background-color: #fff; 
+    box-sizing: border-box;
+    width: 400px;
+    text-align: center;
+    padding-top: 20px;
+}
+
 
