@@ -1,0 +1,122 @@
+body {
+  color: #000;
+  font-family: "SVN-Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  align-items: center;
+  text-transform: uppercase;
+  color: #18191f;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+nav {
+  position: fixed;
+  overflow: hidden;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.navbar {
+  display: flex;
+  height: 52;
+  width: 1250px;
+}
+.logo > img {
+  width: 81px;
+  margin-top: 13px;
+  margin-left: 11px;
+  height: 26px;
+}
+
+.navbar-nav {
+  display: flex;
+}
+.navbar-nav > li {
+  padding: 0 30px;
+  list-style-type: none;
+  margin-top: 10px;
+}
+.item > a {
+  text-decoration: none;
+}
+
+ul > li {
+  text-decoration: none !important;
+  list-style-type: none !important;
+}
+li > a {
+  text-decoration: none !important;
+  list-style-type: none !important;
+}
+#display {
+  position: absolute;
+}
+.plus {
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  margin-left: -15px;
+}
+.item li {
+  display: none;
+}
+.item:hover .plus li {
+  display: block;
+  visibility: visible;
+}
+input {
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(235, 227, 227);
+  height: 20px;
+  margin-top: 18px;
+
+  padding: 10px;
+}
+button {
+  border: 1px solid red;
+  border-radius: 20px;
+  color: red;
+  height: 40px;
+  background-color: #fff;
+  height: 40px;
+  margin-left: 20px;
+}
+.login {
+  font-style: normal;
+}
+.right {
+  float: right;
+  margin-left: auto;
+}
+
+/* Declare the keyframe animation */
+@keyframes myAnimation {
+  0% {
+    background-image: url("img/backgr.png"); /* The initial image */
+  }
+  33% {
+    background-image: url("img/1007_e3a013b9-3552-48ce-951d-95d49d54892e.png"); /* Image to fade in at 50% of the animation duration */
+  }
+  66% {
+    background-image: url("img/1013_b9ab5165-5034-4949-9876-e6fe334afdd8.jpg"); /* Image to fade in at 75% of the animation duration */
+  }
+  100% {
+    background-image: url("img/1006_2c2ac451-e0c8-4a8a-b80a-8d1cfc963bdb.png"); /* The final image */
+  }
+}
+
+.background {
+  width: 1250px;
+  height: 500px;
+  margin-top: 52px;
+  position: absolute;
+  z-index: -1;
+  animation: myAnimation 10s infinite alternate ease;
+}
