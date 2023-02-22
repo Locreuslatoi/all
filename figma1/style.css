@@ -1,5 +1,6 @@
 body {
   color: #000;
+  background-color: rgb(249, 240, 228);
   font-family: "SVN-Poppins";
   font-style: normal;
   font-weight: 600;
@@ -9,7 +10,6 @@ body {
   color: #18191f;
 }
 nav {
-  overflow: hidden;
   background-color: #fff;
   top: 0;
   left: 0;
@@ -18,7 +18,6 @@ nav {
 }
 .navbar {
   display: flex;
-
   width: 100%;
 }
 .logo > img {
@@ -26,9 +25,6 @@ nav {
   margin-top: 13px;
   margin-left: 11px;
   height: 26px;
-}
-.nav-center {
-  max-width: ;
 }
 .navbar-nav {
   display: flex;
@@ -50,20 +46,22 @@ li > a {
   text-decoration: none;
   list-style-type: none;
 }
-#display {
-  position: absolute;
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
-.plus {
-  border: 1px solid #fff;
-  box-sizing: border-box;
-  margin-left: -15px;
-}
-.item li {
+.dropdown-content {
   display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  color: #000;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
 }
-.item:hover .plus li {
+.dropdown:hover .dropdown-content {
   display: block;
-  visibility: visible;
 }
 input {
   border: none;
@@ -111,9 +109,8 @@ img {
 
 .slideshow-container {
   max-width: 1250px;
-  height: 500px;
+  height: auto;
   position: relative;
-  margin: auto;
 }
 
 .prev,
@@ -121,21 +118,14 @@ img {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
   color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
+  font-size: 50px;
+  transition: 0.2s ease;
   border-radius: 0 3px 3px 0;
 }
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
-}
-.fade {
-  position: relative !important;
 }
 .game {
   position: absolute;
@@ -144,12 +134,234 @@ img {
   font-size: 18px;
   margin-left: 100px;
 }
+.img-item {
+  text-align: center;
+}
+.dot {
+  cursor: pointer;
+  height: 100px;
+  width: 230px;
+  border-radius: 30px;
+  margin: -30px 2px;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  padding: 0 10px;
+}
+.sec-3 {
+  margin-bottom: 0.75rem;
+  margin-top: 5rem;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 48rem;
+}
+.sec-content {
+  background-image: url(img/bg_statistic_dt.58252f1d762950fe5f01.png);
+  padding: 28px 20px 20px 154px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-size: auto;
+}
+.sec-content .total {
+  padding-left: 0;
+  position: relative;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.total {
+  display: flex;
+  list-style-type: none;
+}
+.total > .no-total {
+  color: red;
+  padding: 0 10px;
+  font-weight: bold;
+}
+.total > .follow {
+  padding: 0 10px;
+}
+.icon-logo img {
+  border-radius: 100px;
+  width: 36px;
+  height: 36px;
+}
+.follow {
+  margin: 5px 0;
+  margin-right: -50px;
+}
+.icon {
+  display: flex;
+  margin: 0 20px;
+}
+.list-game {
+  padding: 28px 20px 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-size: auto;
+}
+.open a {
+  color: red;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 0 10px;
+}
+.bg {
+  background-color: #fff;
+}
+.list-view {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.icon-game {
+  width: 16%;
+  text-align: center;
+  padding: 10px;
+}
+.icon-game a {
+  text-decoration: none;
+  color: #000;
+}
+.icon-game img {
+  border-radius: 20px;
+}
+.icon-gamehot {
+  width: 33%;
+  text-align: center;
+  padding: 10px;
+}
+.icon-gamehot img {
+  border-radius: 30px;
+}
+.icon-gamehot a {
+  text-decoration: none;
+  color: #000;
+}
+.bg-white {
+  background-color: #fff;
+  margin-top: 20px;
+}
+.text {
+  padding-top: 30px;
+  text-align: center;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.icon-br {
+  width: 16%;
+  text-align: center;
+  padding: 10px;
+}
+.icon-br img {
+  border-radius: 20px;
+}
+.ft-bg {
+  background-color: antiquewhite;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 48rem;
+  margin-top: 50px;
+}
+.ft-content {
+  display: flex;
+}
+.logo-ft img {
+  width: 85px;
+  height: 48px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.note {
+  padding: 20px 30px;
+  color: #474a57;
+  font-family: "SVN-Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+}
+.text-1 {
+  font-family: "SVN-Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+}
+.ft-end {
+  display: flex;
+  width: 100%;
+}
+.inf {
+  width: 30%;
+  padding: 0 20px;
+}
+.inf h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+}
+.Subscribe {
+  width: 70%;
+}
+.Subscribe h1 {
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+}
+.Subscribe-fl {
+  display: flex;
+}
+.input {
+  margin-left: auto;
+  float: right;
+  box-sizing: border-box;
+  width: 316px;
+  height: 48px;
+  background: #ffffff;
+  border: 1px solid #d9dbe1;
+  border-radius: 4px;
+}
+.button button {
+  width: 48px;
+  height: 48px;
+  margin-left: 0;
+  padding: 0 10px;
+  background-color: #fc3e3e;
+  color: white;
+  border: 1px solid #d9dbe1;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
 @media (max-width: 1100px) {
   .game {
     display: none;
   }
   .navbar-nav {
+    display: none;
+  }
+  .prev,
+  .next {
+    font-size: 30px;
+  }
+}
+@media (max-width: 772px) {
+  .icon-game {
+    width: 33%;
+  }
+  .icon-br {
+    width: 33%;
+  }
+  .img-item {
     display: none;
   }
 }
